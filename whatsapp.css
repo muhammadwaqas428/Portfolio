@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Main Page ===== */
+.container {
+  text-align: center;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(37, 211, 102, 0.2);
+  border: 2px solid #25d366;
+  border-radius: 50px;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.whatsapp-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-btn:hover {
+  background: #25d366;
+  transform: scale(1.05);
+}
+
+/* ===== WhatsApp Page ===== */
+.whatsapp-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card.glass {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* QR */
+.qr-box img {
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  border: 4px solid #25d366;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.chat-btn,
+.back-btn {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.chat-btn {
+  background: #25d366;
+  color: #fff;
+}
+
+.chat-btn:hover {
+  background: #128c7e;
+}
+
+.back-btn {
+  background: transparent;
+  border: 2px solid #25d366;
+  color: #25d366;
+}
+
+.back-btn:hover {
+  background: #25d366;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  .qr-box img {
+    width: 180px;
+    height: 180px;
+  }
+}
