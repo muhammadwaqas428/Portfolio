@@ -8,6 +8,7 @@ It showcases my skills, services, projects, and provides an easy way for clients
 ## ✨ Features  
 
 - 🎨 **Modern UI/UX Design**  
+- 🌑 **Dark/Light Theme Toggle**  
 - 📱 **Responsive Layout** (works on mobile, tablet, and desktop)  
 - 🔝 **Sticky Navbar with Smooth Scrolling**  
 - 🖼️ **Animated Sections** (Home, About, Services, Projects, Skills, Contact)  
@@ -29,4 +30,9 @@ It showcases my skills, services, projects, and provides an easy way for clients
 ---
 
 ## 📂 Project Structure  
-
+Portfolio/
+│── index.html # Main HTML file
+│── style.css # CSS styles
+│── script.js # JavaScript functionality
+│── /Img # Images, icons, and other static files
+│── README.md # Documentation
